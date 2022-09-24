@@ -81,3 +81,27 @@ let new_li3 = document.createElement('li');
 new_li3.innerText = 'Strawberry';
 
 element_list.appendChild(new_li3);
+
+var text;
+
+
+text = ['The history of London, the capital city of England and the United Kingdom, extends over 2000 years. In that time, it has become one of the world\'s most significant financial and cultural capital cities. It has withstood plague, devastating fire, civil war, aerial bombardment, terrorist attacks, and riots.  The City of London is the historic core of the Greater London metropolis, and is today its primary financial district, though it represents only a small part of the wider metropolis. ', 'Foundations and prehistory  Some recent discoveries indicate probable very early settlements near the Thames in the London area. In 1993, the remains of a Bronze Age bridge were found on the Thames\'s south foreshore, upstream of Vauxhall Bridge.[1] This bridge either crossed the Thames or went to a now lost island in the river. Dendrology dated the timbers to between 1750 BCE and 1285 BCE.[2] In 2001, a further dig found that the timbers were driven vertically into the ground on the south bank of the Thames west of Vauxhall Bridge.[3]  In 2010, the foundations of a large timber structure, dated to between 4800 BCE and 4500 BCE[4] were found, again on the foreshore south of Vauxhall Bridge.[5] The function of the mesolithic structure is not known. All these structures are on the south bank at a natural crossing point where the River Effra flows into the Thames.[6]  Archaeologist Leslie Wallace notes, "Because no LPRIA [Late pre-Roman Iron Age] settlements or significant domestic refuse have been found in London, despite extensive archaeological excavation, arguments for a purely Roman foundation of London are now common and uncontroversial."[7] ', 'In 1475, the Hanseatic League set up its main English trading base (kontor) in London, called Stalhof or Steelyard. It existed until 1853, when the Hanseatic cities of Lübeck, Bremen and Hamburg sold the property to South Eastern Railway.[15] Woollen cloth was shipped undyed and undressed from 14th/15th century London to the nearby shores of the Low Countries, where it was considered indispensable.[16]  During the Reformation, London was the principal early centre of Protestantism in England. Its close commercial connections with the Protestant heartlands in northern continental Europe, large foreign mercantile communities, disproportionately large number of literate inhabitants and role as the centre of the English print trade all contributed to the spread of the new ideas of religious reform. Before the Reformation, more than half of the area of London was the property of monasteries, nunneries and other religious houses.[17] '];
+
+let element_story = document.getElementById('story');
+text.push(text[0]);
+element_story.innerText = text.shift();
+
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_story2 = document.getElementById('story');
+  text.push(text[0]);
+  element_story2.innerText = text.shift();
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_story3 = document.getElementById('story');
+  text.push(text[0]);
+  element_story3.innerText = text.shift();
+
+});
