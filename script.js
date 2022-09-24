@@ -68,19 +68,7 @@ const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
 
 --
-let element_list = document.getElementById('list');
-let new_li = document.createElement('li');
-new_li.innerText = 'Banana';
 
-element_list.appendChild(new_li);
-let new_li2 = document.createElement('li');
-new_li2.innerText = 'Orange';
-
-element_list.appendChild(new_li2);
-let new_li3 = document.createElement('li');
-new_li3.innerText = 'Strawberry';
-
-element_list.appendChild(new_li3);
 
 
 var links;
