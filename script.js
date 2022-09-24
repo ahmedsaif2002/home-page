@@ -105,3 +105,26 @@ document.getElementById('previous').addEventListener('click', (event) => {
   element_story3.innerText = text.shift();
 
 });
+var links;
+
+
+links = ['https://codeyourfuture.io/wp-content/uploads/2019/03/cyf_brand.png', 'https://codeyourfuture.io/wp-content/uploads/2020/08/Logo-BBC.png', 'https://codeyourfuture.io/wp-content/uploads/2020/08/Logo-Capgemini.png'];
+
+links.push(links[0]);
+let element_image = document.getElementById('image');
+element_image.setAttribute("src", links.shift());
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  links.push(links[0]);
+  let element_image2 = document.getElementById('image');
+  element_image2.setAttribute("src", links.shift());
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  links.unshift(links[0]);
+  let element_image3 = document.getElementById('image');
+  element_image3.setAttribute("src", links.shift());
+
+});
